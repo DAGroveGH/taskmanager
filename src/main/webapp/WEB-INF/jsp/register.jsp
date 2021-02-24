@@ -14,9 +14,9 @@
             <h2>Create An Account</h2>
             <p>${message }</p>
             <form action="/register" method="post">
-                <input type="text" name="username" placeholder="username"/><br>
-                <input type="password" name="password" placeholder="password"/><br>
-                <input type="email" name="email" placeholder="username@email.com"/><br>
+                <input type="text" name="username" placeholder="username" required/><br>
+                <input type="password" name="password" placeholder="password" required/><br>
+                <input type="email" name="email" placeholder="username@email.com" required/><br>
                 <button type="submit" class="btn btn-primary">Register</button><br>
                 Already have an account? Login <a href="/login">here</a>
             </form>

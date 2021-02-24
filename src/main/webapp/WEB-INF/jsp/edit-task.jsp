@@ -24,19 +24,19 @@
             <h2>Edit A Task</h2>
             <p>${message }</p>
             <form action="../update" method="post">
-                <input type="hidden" name="taskId" value="${current.taskId}" readonly/><br>
-                <input type="text" name="taskName" placeholder="Task name" value="${current.taskName}"/><br>
+                <input type="hidden" name="taskId" value="${current.taskId}" readonly /><br>
+                <input type="text" name="taskName" placeholder="Task name" value="${current.taskName}" required/><br>
                 <label>Start Date</label><br>
-                <input type="date" name="startDate" value="${current.startDate}"/><br>
+                <input type="date" name="startDate" value="${current.startDate}" required/><br>
                 <label>End Date</label><br>
-                <input type="date" name="endDate" value="${current.endDate}"/><br>
+                <input type="date" name="endDate" value="${current.endDate}" required/><br>
 
-                <select name="severity">
+                <select name="severity" required>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select><br>
-                <textarea name="description" cols="30" rows="10">${current.description}</textarea><br>
+                <textarea name="description" cols="30" rows="10" required>${current.description}</textarea><br>
                 <button type="submit" class="btn btn-primary">Save Changes</button>
             </form><br>
 

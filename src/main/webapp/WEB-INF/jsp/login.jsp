@@ -14,8 +14,8 @@
             <p>${message}</p>
             <p>${error}</p>
             <form action="/login" method="post">
-                <input type="text" name="username" placeholder="Username" /><br>
-                <input type="password" name="password" placeholder="Password" /><br>
+                <input type="text" name="username" placeholder="Username" required /><br>
+                <input type="password" name="password" placeholder="Password" required/><br>
                 <button type="submit" class="btn btn-primary">Login</button><br>
                 Don't have an account? Create one <a href="/register" >here</a>
             </form>

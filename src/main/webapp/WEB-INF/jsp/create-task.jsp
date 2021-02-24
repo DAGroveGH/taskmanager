@@ -24,18 +24,18 @@
             <p>${message}</p>
             <p>${error}</p>
             <form action="create-task" method="post">
-                <input type="text" name="taskName" placeholder="Task name"/><br>
+                <input type="text" name="taskName" placeholder="Task name" required/><br>
                 <label class="label">Start Date</label><br>
-                <input type="date" name="startDate" placeholder="Start Date"/><br>
+                <input type="date" name="startDate" required/><br>
                 <label class="label">End Date</label><br>
-                <input type="date" name="endDate"/><br>
+                <input type="date" name="endDate" required/><br>
                 <label class="label">Priority</label>
-                <select name="severity">
+                <select name="severity" required>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select><br>
-                <textarea name="description" cols="30" rows="5" maxlength="80" placeholder="Enter a description..."></textarea><br>
+                <textarea name="description" cols="30" rows="5" maxlength="80" placeholder="Enter a description..." required></textarea><br>
                 <button type="submit" class="btn btn-primary">Add New Task</button>
             </form>
         </div>
